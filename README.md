@@ -12,7 +12,9 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [Static & Config Scanning](#static--config-scanning)
 - [Runtime Guardrails](#runtime-guardrails)
 - [Red-Teaming & Testing](#red-teaming--testing)
+- [Benchmarks & Evaluation](#benchmarks--evaluation)
 - [Prompt Injection & Tool Poisoning](#prompt-injection--tool-poisoning)
+- [Identity, Authorization & Access](#identity-authorization--access)
 - [Related Lists](#related-lists)
 - [Contributing](#contributing)
 
@@ -31,6 +33,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [agent-warden](https://github.com/adventurewave-labs/agent-warden) - eBPF runtime guardrails: watches what agents actually do (files, egress, process spawns) and enforces alert/block/kill. *(ours)*
 - [LLM Guard](https://github.com/protectai/llm-guard) - Protect AI's security toolkit for LLM I/O: sanitization, harmful-content detection, data-leak prevention, prompt-injection resistance.
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - NVIDIA's toolkit for programmable rails between app code and the model.
+- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Input/output Guards backed by a Hub of composable validators; structured-output enforcement plus risk detection.
 
 ## Red-Teaming & Testing
 
@@ -38,10 +41,20 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [PyRIT](https://github.com/microsoft/PyRIT) - Microsoft's Python Risk Identification Tool for proactively finding risks in generative-AI systems.
 - [promptfoo](https://github.com/promptfoo/promptfoo) - Test/red-team harness with first-class CI/CD support and an agentic red-team suite (now an OpenAI product; still open source).
 
+## Benchmarks & Evaluation
+
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) - ETH Zurich's dynamic environment for evaluating prompt-injection attacks and defenses on tool-using agents across banking, Slack, workspace, and travel tasks.
+- [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) - Benchmark for indirect prompt injection in tool-integrated agents: 1,054 cases spanning 17 user tools and 62 attacker tools.
+
 ## Prompt Injection & Tool Poisoning
 
 - [mcp-injection-experiments](https://github.com/invariantlabs-ai/mcp-injection-experiments) - Reproducible proof-of-concept MCP tool-poisoning attacks — read these before you trust a tool description.
+- [vigil-llm](https://github.com/deadbits/vigil-llm) - Self-hostable scanner (library + REST API) that detects prompt injections and jailbreaks, shipping its own signatures and datasets.
 - [Simon Willison — prompt injection](https://simonwillison.net/tags/prompt-injection/) - The running field notes on prompt injection: why it's unsolved and what actually helps.
+
+## Identity, Authorization & Access
+
+- [Cerbos](https://github.com/cerbos/cerbos) - Policy-as-code, language-agnostic authorization; enforce fine-grained, context-aware access control on which tools an agent may call (ships an MCP authorization demo).
 
 ## Related Lists
 
