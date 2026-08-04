@@ -25,11 +25,11 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 
 ## Static & Config Scanning
 
- - [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) - Invariant's scanner for MCP servers: inventories installed components and flags injections, sensitive-data handling, and hidden payloads.
+- [agent-scan](https://github.com/snyk/agent-scan) - Scanner for MCP servers and AI agents: inventories installed components and flags injections, sensitive-data handling, and hidden payloads. Formerly Invariant Labs' mcp-scan; now maintained by Snyk.
 
 ## Runtime Guardrails
 
- - [LLM Guard](https://github.com/protectai/llm-guard) - Protect AI's security toolkit for LLM I/O: sanitization, harmful-content detection, data-leak prevention, prompt-injection resistance.
+- [LLM Guard](https://github.com/protectai/llm-guard) - Protect AI's security toolkit for LLM I/O: sanitization, harmful-content detection, data-leak prevention, prompt-injection resistance. Archived by its maintainer as of Jul 2026; no linked successor.
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - NVIDIA's toolkit for programmable rails between app code and the model.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Input/output Guards backed by a Hub of composable validators; structured-output enforcement plus risk detection.
 
@@ -47,7 +47,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 ## Prompt Injection & Tool Poisoning
 
 - [mcp-injection-experiments](https://github.com/invariantlabs-ai/mcp-injection-experiments) - Reproducible proof-of-concept MCP tool-poisoning attacks — read these before you trust a tool description.
-- [vigil-llm](https://github.com/deadbits/vigil-llm) - Self-hostable scanner (library + REST API) that detects prompt injections and jailbreaks, shipping its own signatures and datasets.
+- [vigil-llm](https://github.com/deadbits/vigil-llm) - Self-hostable scanner (library + REST API) that detects prompt injections and jailbreaks, shipping its own signatures and datasets. Last released Dec 2023; largely unmaintained since.
 - [Simon Willison — prompt injection](https://simonwillison.net/tags/prompt-injection/) - The running field notes on prompt injection: why it's unsolved and what actually helps.
 
 ## Identity, Authorization & Access
