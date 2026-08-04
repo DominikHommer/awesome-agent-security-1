@@ -25,13 +25,11 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 
 ## Static & Config Scanning
 
-- [agentvet](https://github.com/adventurewave-labs/agentvet) - Scans an agentic workspace (skills, plugins, subagents, hooks, MCP configs, CLAUDE.md) for injection, exfiltration, and over-permissioning before an agent runs. *(ours)*
-- [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) - Invariant's scanner for MCP servers: inventories installed components and flags injections, sensitive-data handling, and hidden payloads.
+ - [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) - Invariant's scanner for MCP servers: inventories installed components and flags injections, sensitive-data handling, and hidden payloads.
 
 ## Runtime Guardrails
 
-- [agent-warden](https://github.com/adventurewave-labs/agent-warden) - eBPF runtime guardrails: watches what agents actually do (files, egress, process spawns) and enforces alert/block/kill. *(ours)*
-- [LLM Guard](https://github.com/protectai/llm-guard) - Protect AI's security toolkit for LLM I/O: sanitization, harmful-content detection, data-leak prevention, prompt-injection resistance.
+ - [LLM Guard](https://github.com/protectai/llm-guard) - Protect AI's security toolkit for LLM I/O: sanitization, harmful-content detection, data-leak prevention, prompt-injection resistance.
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - NVIDIA's toolkit for programmable rails between app code and the model.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Input/output Guards backed by a Hub of composable validators; structured-output enforcement plus risk detection.
 
@@ -68,6 +66,6 @@ PRs welcome — one entry per PR, with a one-line reason it belongs here. Must b
 
 ---
 
-Maintained by [Adventure Wave Labs](https://github.com/adventurewave-labs) — we also build [agentvet](https://github.com/adventurewave-labs/agentvet) and [agent-warden](https://github.com/adventurewave-labs/agent-warden).
+Maintained by [Adventure Wave Labs](https://github.com/adventurewave-labs).
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](LICENSE)
