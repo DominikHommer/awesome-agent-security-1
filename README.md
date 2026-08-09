@@ -37,7 +37,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 
 - [garak](https://github.com/NVIDIA/garak) - NVIDIA's LLM vulnerability scanner — nmap for language models; the widest range of attack probes.
 - [PyRIT](https://github.com/microsoft/PyRIT) - Microsoft's Python Risk Identification Tool for proactively finding risks in generative-AI systems.
-- [promptfoo](https://github.com/promptfoo/promptfoo) - Test/red-team harness with first-class CI/CD support and an agentic red-team suite (now an OpenAI product; still open source).
+- [promptfoo](https://github.com/promptfoo/promptfoo) - Test/red-team harness with first-class CI/CD support and an agentic red-team suite.
 
 ## Benchmarks & Evaluation
 
