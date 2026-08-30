@@ -11,6 +11,12 @@ timeout = 20
 max_retries = 3
 retry_wait_time = 5
 
+# Some .gov/.mil hosts (e.g. media.defense.gov) 403 lychee's default
+# User-Agent even though the same document loads fine in a browser.
+# Identify as a normal browser so link checks reflect real reachability
+# instead of trivial bot-sniffing.
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+
 # Redirects are expected and fine (GitHub org/repo renames are exactly what
 # this workflow exists to keep pace with going forward).
 accept = [100, 200, 201, 202, 203, 204, 206, 301, 302, 303, 307, 308]
