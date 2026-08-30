@@ -11,11 +11,16 @@ timeout = 20
 max_retries = 3
 retry_wait_time = 5
 
-# Some .gov/.mil hosts (e.g. media.defense.gov) 403 lychee's default
-# User-Agent even though the same document loads fine in a browser.
-# Identify as a normal browser so link checks reflect real reachability
-# instead of trivial bot-sniffing.
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+# media.defense.gov (the NSA-hosted mirror of the joint CISA/NSA/FBI/NCSC
+# secure-AI-development guidelines) 403s every request from this CI
+# environment regardless of User-Agent - almost certainly a network/IP
+# block on .mil infrastructure against cloud/CI IP ranges, not a dead
+# link. Manually verified live and correct (fetched and read directly)
+# on 2026-08-30. Excluded here rather than accepting 403 globally, so a
+# genuine 403 anywhere else still fails the check.
+exclude = [
+    '^https://media\.defense\.gov/2023/Nov/27/2003346994/',
+]
 
 # Redirects are expected and fine (GitHub org/repo renames are exactly what
 # this workflow exists to keep pace with going forward).
