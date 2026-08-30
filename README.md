@@ -40,13 +40,13 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [Semgrep AI](https://semgrep.dev/products/semgrep-ai/) — Static analysis rules for AI/LLM code: detects hardcoded API keys, insecure model configs, unsafe deserialization of model inputs, and missing output validation.
 - [TruffleHog](https://github.com/trufflesecurity/trufflehog) — Secrets scanner with 800+ credential detectors — essential for agent repos that store cloud/LLM provider keys in config files.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Yelp's baseline-first approach to detecting secrets in code; useful as a pre-commit hook for agent config files.
-- [zizmor](https://github.com/woodruffw/zizmor) — Security linting for GitHub Actions workflows — agents that run in CI/CD often have overly permissive workflow permissions.
+- [zizmor](https://github.com/zizmorcore/zizmor) — Security linting for GitHub Actions workflows — agents that run in CI/CD often have overly permissive workflow permissions.
 
 ## Runtime Guardrails
 
 - [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) — NVIDIA's toolkit for programmable rails between app code and the model: topic control, input/output filtering, and custom guardrail logic.
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) — Input/output Guards backed by a Hub of composable validators; structured-output enforcement plus risk detection.
-- [Lakera Guard](https://github.com/lakeraai/guard) — API-based guard for prompt injection, jailbreak, and toxic content detection; lightweight enough for per-request agent guarding.
+- [Lakera Guard](https://www.lakera.ai/lakera-guard) — API-based guard for prompt injection, jailbreak, and toxic content detection; lightweight enough for per-request agent guarding.
 - [LangFuse](https://github.com/langfuse/langfuse) — Open-source LLM observability platform: trace every agent call, log tool invocations, and set up alerts on anomalous behavior.
 - [Weave (Weights & Biases)](https://github.com/wandb/weave) — Observability and evaluation for LLM apps; tracks agent tool calls, traces, and evaluation metrics.
 - [Helicone](https://github.com/Helicone/helicone) — Open-source LLM gateway with request logging, caching, and analytics; adds an audit trail to agent API calls.
@@ -57,8 +57,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [garak](https://github.com/NVIDIA/garak) — NVIDIA's LLM vulnerability scanner — nmap for language models; the widest range of attack probes.
 - [PyRIT](https://github.com/microsoft/PyRIT) — Microsoft's Python Risk Identification Tool for proactively finding risks in generative-AI systems.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — Test/red-team harness with first-class CI/CD support and an agentic red-team suite.
-- [Crimson GPT](https://github.com/crimson-llm/Crimson-GPT) — Autonomous adversarial AI red-team agent that uses a target LLM to attack another, finding novel jailbreaks.
-- [HarmBench](https://github.com/center-for-humane-technology/harmbench) — Standardized evaluation framework for assessing adversarial robustness across multiple harm categories.
+- [HarmBench](https://github.com/centerforaisafety/HarmBench) — Standardized evaluation framework for assessing adversarial robustness across multiple harm categories.
 - [TextAttack](https://github.com/QData/TextAttack) — NLP adversarial attack framework: generates adversarial examples via character-, word-, and sentence-level perturbations.
 - [ART (Adversarial Robustness Toolbox)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) — IBM's Python toolbox for adversarial ML; attacks, defenses, and benchmarks across modalities.
 
@@ -66,9 +65,9 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 
 - [AgentDojo](https://github.com/ethz-spylab/agentdojo) — ETH Zurich's dynamic environment for evaluating prompt-injection attacks and defenses on tool-using agents across multiple task domains.
 - [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) — Benchmark for indirect prompt injection in tool-integrated agents: 1,054 cases spanning 17 user tools and 62 attacker tools.
-- [SWE-bench](https://github.com/princeton-nlp/SWE-bench) — Real-world software engineering tasks for evaluating agent coding ability; includes security-relevant bug-fix tasks.
-- [CyberSecEval (Meta)](https://github.com/facebookresearch/cyberseceval) — Meta's benchmark evaluating LLMs on cybersecurity tasks: vulnerability identification, exploit generation, and malicious code detection.
-- [ToolEmu](https://github.com/OSU-NLP-Group/ToolEmu) — Framework for evaluating tool-use risks in LLM agents: simulates tool environments to test for injection, misuse, and hallucination.
+- [SWE-bench](https://github.com/SWE-bench/SWE-bench) — Real-world software engineering tasks for evaluating agent coding ability; includes security-relevant bug-fix tasks.
+- [CyberSecEval (Meta)](https://github.com/meta-llama/PurpleLlama/tree/main/CybersecurityBenchmarks) — Meta's benchmark evaluating LLMs on cybersecurity tasks: vulnerability identification, exploit generation, and malicious code detection.
+- [ToolEmu](https://github.com/ryoungj/ToolEmu) — Framework for evaluating tool-use risks in LLM agents: simulates tool environments to test for injection, misuse, and hallucination.
 - [AgentBench](https://github.com/THUDM/AgentBench) — Multi-dimensional benchmark evaluating LLMs as agents across diverse environments including web browsing and code execution.
 
 ## Prompt Injection & Tool Poisoning
@@ -86,7 +85,6 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [Model Context Protocol Specification](https://modelcontextprotocol.io/specification) — Official MCP spec; understanding transport, authorization, and capability-negotiation is prerequisite for securing MCP deployments.
 - [Anthropic — MCP Security Best Practices](https://modelcontextprotocol.io/docs/concepts/security) — Official guidance on securing MCP servers: transport security, authorization, input validation, and sandboxing.
 - [MCP Inspector](https://github.com/modelcontextprotocol/inspector) — Debugging tool for MCP servers; inspect tool definitions, permissions, and message flows before production deployment.
-- [invariantlabs-ai/mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) — Security scanner for MCP server implementations: checks for injection vectors, excessive permissions, and unsafe tool definitions.
 - [Anthropic — Claude MCP Server Authorization](https://docs.anthropic.com/en/docs/claude-code/mcp-authorization) — How Claude Code handles MCP permissions: approval prompts, trust profiles, and tool-level authorization.
 
 ## Identity, Authorization & Access
@@ -109,7 +107,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 
 - [Claude Code — Security Model](https://docs.anthropic.com/en/docs/claude-code/security) — How Claude Code handles permissions, sandboxing, and tool authorization — essential reading for Claude-based agents.
 - [GitHub Copilot — Security & Compliance](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-security-policies) — Enterprise controls for Copilot: IP protection, policy enforcement, and audit logging.
-- [OpenTelemetry for LLMs](https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-instrumentation-llm) — Standardizes LLM observability across agent frameworks via the OpenTelemetry protocol.
+- [OpenTelemetry for LLMs](https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation-genai) — Standardizes LLM observability across agent frameworks via the OpenTelemetry protocol.
 - [Falco](https://github.com/falcosecurity/falco) — Cloud-native runtime security monitor; detect anomalous agent behavior (unexpected network calls, file access, process spawning) in real time.
 - [Oso](https://github.com/osohq/oso) — Authorization library for building fine-grained access control; model agent permissions as declarative Polar policies.
 
@@ -118,9 +116,9 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [awesome-ai-security](https://github.com/ottosulin/awesome-ai-security) — Broad AI-security resource collection.
 - [Awesome-LLMSecOps](https://github.com/wearetyomsmnv/Awesome-LLMSecOps) — LLM security operations: tooling, attacks, defenses.
 - [awesome-agent-skills-security](https://github.com/LLMSecurity/awesome-agent-skills-security) — Focused on agent-skill security: attacks, defenses, benchmarks for tool use.
-- [awesome-prompt-injection](https://github.com/dxunti/awesome-prompt-injection) — Comprehensive collection of prompt injection research, tools, and defenses.
-- [awesome-llm-security](https://github.com/crantsak/awesome-llm-security) — Curated list of LLM security tools, papers, and resources.
-- [awesome-mcp](https://github.com/punkpeye/awesome-mcp) — Curated list of MCP servers, clients, and tools.
+- [awesome-prompt-injection](https://github.com/Joe-B-Security/awesome-prompt-injection) — Comprehensive collection of prompt injection research, tools, and defenses.
+- [awesome-llm-security](https://github.com/corca-ai/awesome-llm-security) — Curated list of LLM security tools, papers, and resources.
+- [awesome-mcp](https://github.com/punkpeye/awesome-mcp-servers) — Curated list of MCP servers, clients, and tools.
 
 ## Contributing
 
