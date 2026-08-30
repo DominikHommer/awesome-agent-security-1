@@ -23,6 +23,10 @@ exclude = [
     '^https://media\.defense\.gov/2023/Nov/27/2003346994/',
     # Official ISO/IEC 42001:2023 AI Management Systems standard page.
     '^https://www\.iso\.org/standard/42001$',
+    # Microsoft Security Blog: "Mitigating Skeleton Key, a new type of
+    # generative AI jailbreak technique". microsoft.com's WAF 403s this CI
+    # environment's requests; verified live in a browser on 2026-08-30.
+    '^https://www\.microsoft\.com/en-us/security/blog/2024/06/26/mitigating-skeleton-key-a-new-type-of-generative-ai-jailbreak-technique/$',
 ]
 
 # Redirects are expected and fine (GitHub org/repo renames are exactly what
