@@ -87,7 +87,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [MCP Security Best Practices](https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices) — Official guidance on securing MCP servers: transport security, authorization, input validation, and sandboxing.
 - [MCP Inspector](https://github.com/modelcontextprotocol/inspector) — Debugging tool for MCP servers; inspect tool definitions, permissions, and message flows before production deployment.
 - [Claude Code — MCP Authorization](https://code.claude.com/docs/en/mcp) — How Claude Code handles MCP permissions: approval prompts, trust profiles, and tool-level authorization.
-- [Gram](https://github.com/speakeasy-api/gram) — Open-source AI control plane that connects agents to MCPs with policy enforcement, granular access control, and observability.
+- [Speakeasy AI Control Plane](https://www.speakeasy.com/product/ai-control-plane) — Enterprise AI control plane for governing agent and MCP access with role-based access control, runtime guardrails, and audit trails.
 
 ## Identity, Authorization & Access
 
