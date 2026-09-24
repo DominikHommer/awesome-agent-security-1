@@ -33,6 +33,7 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [CISA Guidelines for Secure AI System Development](https://media.defense.gov/2023/Nov/27/2003346994/-1/-1/0/CSI-JOINT-GUIDELINES-FOR-SECURE-AI-SYSTEM-DEVELOPMENT.PDF) — Joint CISA/NSA/FBI/NCSC guidance covering design, development, deployment, and operation of AI systems.
 - [Cloud Security Alliance AI Safety & Security](https://cloudsecurityalliance.org/research/working-groups/artificial-intelligence/) — CSA working group producing guidance on AI security governance, risk assessment, and controls.
 - [ISO/IEC 42001:2023 — AI Management Systems](https://www.iso.org/standard/42001) — International standard for establishing, implementing, and improving an AI management system within organizations.
+- [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) — Open database of real-world AI agent security incidents (prompt injection, MCP, agent supply chain, sandbox escapes, agent-framework CVEs); every record cites a primary source and flags whether a victim was confirmed, so threat models can be checked against what has actually happened.
 
 ## Static & Config Scanning
 
