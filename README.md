@@ -73,7 +73,6 @@ Designing autonomous AI agent loops — running coding agents in self-feeding cy
 
 - [The Ralph Wiggum Loop: Autonomous Code Generation with Fresh Context](https://www.codecentric.de/en/knowledge-hub/blog/the-ralph-wiggum-loop-autonomous-code-generation-with-a-fresh-context) - Why fresh context every iteration is the point, not a side effect: filesystem as memory, one task per iteration, exit for a clean window.
 - [Agentic Engineering Protocols: The Ralph Wiggum Loop](https://dwmkerr.com/ralph-wiggum-loop/) - Loop as protocol: spec comparison, IMPLEMENTATION_PLAN.md as prioritized queue, commit-per-iteration.
-- [Ralph Wiggum pattern](https://path.kilo.ai/introduction/patterns/ralph-wiggum/) - Pattern-catalog treatment: when to reach for a loop vs a single session.
 - [The Ralph Loop: How Recursive AI Agents Actually Work](https://thomas-wiegold.com/blog/ralph-loop-how-recursive-ai-agents-work/) - Mechanics of recursion via restart: plan files, DONE sentinels, retry-with-fresh-context.
 - [Ralph Wiggum Loop notes](https://prg.sh/notes/Ralph-Wiggum-Loop) - Condensed field notes on the loop lifecycle.
 - [Agentic Coding Framework: Build the Agent Loop](https://www.buildmvpfast.com/blog/harness-engineering-agent-loop-agentic-coding-framework-2026) - The progression from harness engineering to loop engineering: the harness on a timer, spawning helpers, feeding itself.
