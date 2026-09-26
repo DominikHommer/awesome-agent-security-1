@@ -41,11 +41,6 @@ exclude = [
     '^https://medium\.com/@tentenco/what-is-ralph-loop-a-new-era-of-autonomous-coding-96a4bb3e2ac8$',
     # buildmvpfast.com blog post - sits behind a Cloudflare JS challenge.
     '^https://www\.buildmvpfast\.com/blog/harness-engineering-agent-loop-agentic-coding-framework-2026$',
-    # Peter Steinberger's X post cited in Loops > Loop Canon. x.com disallows
-    # automated fetching (robots.txt) and rejects CI requests; the entry also
-    # carries an archive.ph copy. The loop list's own scheduled link check
-    # started failing on 2026-09-21 with only this class of link unverifiable.
-    '^https://x\.com/steipete/status/2063697162748260627$',
 ]
 
 # Redirects are expected and fine (GitHub org/repo renames are exactly what
