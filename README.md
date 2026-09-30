@@ -439,6 +439,7 @@ Rust libraries and tools for agentic AI: agent frameworks, native LLM inference,
 
 ### Data, Memory & Vectors
 
+- [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - Developer-alpha Rust CLI and MCP server for signed, encrypted, append-only agent notes with scoped, expiring grants.
 - [lancedb](https://github.com/lancedb/lancedb) - Embedded, serverless vector database that runs in-process — agent memory with no infrastructure (companion crate: rig-lancedb).
 - [qdrant-client](https://github.com/qdrant/rust-client) - Official Rust client for the Qdrant vector search engine; rich payload filtering for RAG and long-term memory.
 - [pgvector](https://github.com/pgvector/pgvector-rust) - Official Rust bindings for the pgvector Postgres extension; works with rust-postgres, SQLx, or Diesel for teams running vector search on Postgres they already operate.
