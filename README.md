@@ -89,6 +89,7 @@ Designing autonomous AI agent loops — running coding agents in self-feeding cy
 - [agentic-loop](https://github.com/allierays/agentic-loop) - RALPH + PRD-driven development toolkit; `npx agentic-loop run`.
 - [loop-maker](https://github.com/EricTechPro/loop-maker) - Interviews you, then scaffolds a self-running loop with verifier, state file, and human gate. Cross-harness (Claude Code / Codex / Hermes / OpenClaw).
 - [loopgen-rs](https://github.com/adventurewave-labs/loopgen-rs) - Agentic loop runner for Claude Code, in Rust. *(ours)*
+- [yylo](https://github.com/yylo-dev/yylo) - CLI that loops coding agents through one task per worktree to a receipt-backed, validated commit — Ralph-style autonomy with typed task, merge, and release gates; Pi and Codex as engines.
 
 ### Multi-Agent Loop Systems
 
